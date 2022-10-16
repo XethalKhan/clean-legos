@@ -1,7 +1,7 @@
 {
   "name": "@clean-legos/monorepo",
   "version": "1.0.0",
-  "description": "Adventure Works monorepo",
+  "description": "Implementation of clean architecture - use packages as legos",
   "main": "index.js",
   "scripts": {
     "test": "mocha --recursive packages/**/*.js"
