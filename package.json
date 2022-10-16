@@ -1,0 +1,19 @@
+{
+  "name": "@clean-legos/monorepo",
+  "version": "1.0.0",
+  "description": "Adventure Works monorepo",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive packages/**/*.js"
+  },
+  "workspaces": [
+    "packages/**"
+  ],
+  "author": "Petar Bojovic",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^15.0.0",
+    "mocha": "^10.0.0"
+  }
+}

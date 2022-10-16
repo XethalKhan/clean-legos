@@ -1,0 +1,18 @@
+{
+  "name": "@clean-legos/domain-notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "exports": {
+    ".": "./index.mjs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Petar Bojovic",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "@clean-legos/domain-core": "^1.0.0"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@clean-legos/use-case-notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Petar Bojovic",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "@clean-legos/domain-notes": "^1.0.0",
+    "@clean-legos/use-case-core": "^1.0.0"
+  }
+}

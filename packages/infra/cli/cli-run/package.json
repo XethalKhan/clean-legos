@@ -1,0 +1,23 @@
+{
+  "name": "@clean-legos/cli-run",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "exports": {
+    ".": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Petar Bojovic",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "@clean-legos/adapter-controller": "^1.0.0",
+    "@clean-legos/adapter-presenter": "^1.0.0",
+    "@clean-legos/json-file-storage": "^1.0.0",
+    "@clean-legos/txt-file-storage": "^1.0.0",
+    "@clean-legos/use-case-core": "^1.0.0",
+    "@clean-legos/use-case-notes": "^1.0.0"
+  }
+}
