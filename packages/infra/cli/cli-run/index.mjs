@@ -8,6 +8,8 @@ import { buildStorageBootstrap, buildNotesStorage } from '@clean-legos/txt-file-
 
 import { buildCreateNoteController } from '@clean-legos/adapter-controller';
 
+import { buildCreateNoteEndView } from '@clean-legos/cli-view';
+
 const bootstrap = buildStorageBootstrap(console);
 
 const notesPresenter = buildNotePresenter(console);
@@ -24,6 +26,10 @@ const createNoteController = buildCreateNoteController(createUseCaseInteractor, 
 async function exec() {
   await bootstrap();
   await createNoteController('Pera note test');
+
+  const view = buildCreateNoteEndView();
+  const viewModel = notesPresenter.viewModel();
+  view.display(viewModel);
 }
 
 exec();
