@@ -1,0 +1,21 @@
+{
+  "extends": "airbnb-base",
+  "overrides": [
+    /*
+    Because we use ES6, we must disable mport/extensions rules to enable import with .js extensions.
+    */
+    {
+      "files": ["*.js","*.mjs"],
+      "rules": {
+        "import/extensions": "off"
+      }
+    }
+  ]
+  /*
+    Because mocha is a development dependency of monorepo, not of specific packages,
+    we must specify paths where eslint will look for package.json files to processs
+    the rule import/no-extraneous-dependencies in all test scripts.
+    Option 'includeInternal' includes all child package.json files it finds. 
+    */
+    //"import/no-extraneous-dependencies": ["error", {"includeInternal": true}]
+}
